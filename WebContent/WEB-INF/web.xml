@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>EVENT MANAGEMENT APP</display-name>
+ 
+ 
+
+  
+<!-- Payment servelets -->
+  <servlet>
+    <servlet-name>AddPaymentServlet</servlet-name>
+    <servlet-class>servlet.AddPaymentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePaymentServlet</servlet-name>
+    <servlet-class>servlet.UpdatePaymentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeletePaymentServlet</servlet-name>
+    <servlet-class>servlet.DeletePaymentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetPaymentServlet</servlet-name>
+    <servlet-class>servlet.GetPaymentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListPaymentHistoryServlet</servlet-name>
+    <servlet-class>servlet.ListPaymentHistoryServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddPaymentServlet1</servlet-name>
+    <servlet-class>servlet.AddPaymentServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePaymentServlet1</servlet-name>
+    <servlet-class>servlet.UpdatePaymentServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeletePaymentServlet1</servlet-name>
+    <servlet-class>servlet.DeletePaymentServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetPaymentServlet1</servlet-name>
+    <servlet-class>servlet.GetPaymentServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListPaymentHistoryServlet1</servlet-name>
+    <servlet-class>servlet.ListPaymentHistoryServlet1</servlet-class>
+  </servlet>
+ 
+<!-- Suppliers servelets --> 
+   <servlet>
+    <servlet-name>AddSupplierServlet</servlet-name>
+    <servlet-class>servlet.AddSupplierServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateSupplierServlet</servlet-name>
+    <servlet-class>servlet.UpdateSupplierServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteSupplierServlet</servlet-name>
+    <servlet-class>servlet.DeleteSupplierServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetSupplierServlet</servlet-name>
+    <servlet-class>servlet.GetSupplierServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListSupplierServlet</servlet-name>
+    <servlet-class>servlet.ListSupplierServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddSupplierServlet1</servlet-name>
+    <servlet-class>servlet.AddSupplierServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateSupplierServlet1</servlet-name>
+    <servlet-class>servlet.UpdateSupplierServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteSupplierServlet1</servlet-name>
+    <servlet-class>servlet.DeleteSupplierServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetSupplierServlet1</servlet-name>
+    <servlet-class>servlet.GetSupplierServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListSupplierServlet1</servlet-name>
+    <servlet-class>servlet.ListSupplierServlet1</servlet-class>
+  </servlet>
+ 
+<!-- Event servelets -->
+  <servlet>
+    <servlet-name>AddEventServlet</servlet-name>
+    <servlet-class>servlet.AddEventServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateEventServlet</servlet-name>
+    <servlet-class>servlet.UpdateEventServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteEventServlet</servlet-name>
+    <servlet-class>servlet.DeleteEventServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetEventServlet</servlet-name>
+    <servlet-class>servlet.GetEventServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListEventServlet</servlet-name>
+    <servlet-class>servlet.ListEventServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>AddEventServlet1</servlet-name>
+    <servlet-class>servlet.AddEventServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateEventServlet1</servlet-name>
+    <servlet-class>servlet.UpdateEventServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteEventServlet1</servlet-name>
+    <servlet-class>servlet.DeleteEventServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetEventServlet1</servlet-name>
+    <servlet-class>servlet.GetEventServlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListEventServlet1</servlet-name>
+    <servlet-class>servlet.ListEventServlet1</servlet-class>
+  </servlet>
+
+<!-- Customer servelets -->  
+  <servlet>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <servlet-class>servlet.AddCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateCustomerServlet</servlet-name>
+    <servlet-class>servlet.UpdateCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <servlet-class>servlet.DeleteCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCustomerServlet</servlet-name>
+    <servlet-class>servlet.GetCustomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListCustomerServlet</servlet-name>
+    <servlet-class>servlet.ListCustomerServlet</servlet-class>
+  </servlet>
+ 
+ <!-- Payment servelets mapping-->
+  <servlet-mapping>
+    <servlet-name>AddPaymentServlet</servlet-name>
+    <url-pattern>/AddPaymentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePaymentServlet</servlet-name>
+    <url-pattern>/UpdatePaymentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePaymentServlet</servlet-name>
+    <url-pattern>/DeletePaymentServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPaymentServlet</servlet-name>
+    <url-pattern>/GetPaymentServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListPaymentHistoryServlet</servlet-name>
+    <url-pattern>/ListPaymentHistoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddPaymentServlet1</servlet-name>
+    <url-pattern>/AddPaymentServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePaymentServlet1</servlet-name>
+    <url-pattern>/UpdatePaymentServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeletePaymentServlet1</servlet-name>
+    <url-pattern>/DeletePaymentServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPaymentServlet1</servlet-name>
+    <url-pattern>/GetPaymentServlet1</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListPaymentHistoryServlet1</servlet-name>
+    <url-pattern>/ListPaymentHistoryServlet1</url-pattern>
+  </servlet-mapping>
+  
+ <!-- Supplier servelets mapping-->
+  <servlet-mapping>
+    <servlet-name>AddSupplierServlet</servlet-name>
+    <url-pattern>/AddSupplierServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSupplierServlet</servlet-name>
+    <url-pattern>/UpdateSupplierServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSupplierServlet</servlet-name>
+    <url-pattern>/DeleteSupplierServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSupplierServlet</servlet-name>
+    <url-pattern>/GetSupplierServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListSupplierServlet</servlet-name>
+    <url-pattern>/ListSupplierServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddSupplierServlet1</servlet-name>
+    <url-pattern>/AddSupplierServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSupplierServlet1</servlet-name>
+    <url-pattern>/UpdateSupplierServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSupplierServlet1</servlet-name>
+    <url-pattern>/DeleteSupplierServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSupplierServlet1</servlet-name>
+    <url-pattern>/GetSupplierServlet1</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListSupplierServlet1</servlet-name>
+    <url-pattern>/ListSupplierServlet1</url-pattern>
+  </servlet-mapping>
+ 
+<!-- Event servelets mapping-->
+  <servlet-mapping>
+    <servlet-name>AddEventServlet</servlet-name>
+    <url-pattern>/AddEventServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateEventServlet</servlet-name>
+    <url-pattern>/UpdateEventServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteEventServlet</servlet-name>
+    <url-pattern>/DeleteEventServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetEventServlet</servlet-name>
+    <url-pattern>/GetEventServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListEventServlet</servlet-name>
+    <url-pattern>/ListEventServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>AddEventServlet1</servlet-name>
+    <url-pattern>/AddEventServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateEventServlet1</servlet-name>
+    <url-pattern>/UpdateEventServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteEventServlet1</servlet-name>
+    <url-pattern>/DeleteEventServlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetEventServlet1</servlet-name>
+    <url-pattern>/GetEventServlet1</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListEventServlet1</servlet-name>
+    <url-pattern>/ListEventServlet1</url-pattern>
+  </servlet-mapping>
+
+<!-- Customer servelets mapping-->
+  <servlet-mapping>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <url-pattern>/AddCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateCustomerServlet</servlet-name>
+    <url-pattern>/UpdateCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteCustomerServlet</servlet-name>
+    <url-pattern>/DeleteCustomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCustomerServlet</servlet-name>
+    <url-pattern>/GetCustomerServlet</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListCustomerServlet</servlet-name>
+    <url-pattern>/ListCustomerServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <welcome-file-list>
+    <welcome-file>Login.html</welcome-file>
+    <welcome-file>Login.htm</welcome-file>
+    <welcome-file>Login.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>

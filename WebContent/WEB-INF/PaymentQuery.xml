@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Querys>
+
+<!-- Create table payment Query -->
+	<query id="create_payment_table">
+        <![CDATA[
+            CREATE TABLE payment(
+				paymentID varchar(255) not null,
+				customerName varchar(255) not null,
+				billingAddress varchar(255) not null,
+				cardType varchar(255) not null,
+				cardNumber varchar(255) not null,
+				expDate  varchar(255) not null,
+				cvc varchar(255) not null,
+				total varchar(255) not null,
+				PRIMARY KEY (paymentID)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE PAYMENT Query -->
+	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS payment 
+        ]]>
+	</query>
+
+	<!-- insert payments Query -->
+	<query id="insert_payment">
+        <![CDATA[
+          	insert into payment (paymentID, customerName, billingAddress, cardType, cardNumber, expDate, cvc, total) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular payment by id Query -->
+	<query id="payment_by_id">
+         <![CDATA[        
+            select * from payment where payment.paymentID = ?
+        ]]>
+	</query>
+
+	<!-- Select all payments -->
+	<query id="all_payment">
+         <![CDATA[        
+            select * from payment
+        ]]>
+	</query>
+
+	<!-- Delete a particular payment by id Query -->
+	<query id="remove_payment">
+         <![CDATA[        
+            delete from payment where payment.paymentID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular payment by id Query -->
+	<query id="update_payment">
+         <![CDATA[        
+            UPDATE payment as p 
+            SET p.customerName = ?, p.billingAddress = ?, p.cardType = ?, p.cardNumber= ?, p.expDate = ?, p.cvc = ?, p.total = ?
+            WHERE p.paymentID = ?
+        ]]>
+	</query>
+	
+		<!-- Get payment IDs Query -->
+	<query id="payment_ids">
+         <![CDATA[        
+            select p.paymentID from payment as p
+        ]]>
+	</query>
+	
+<!-- Create table supplier Query -->
+	<query id="create_supplier_table">
+        <![CDATA[
+            CREATE TABLE supplier(
+				supplierID varchar(255) not null,
+				Name varchar(255),
+				contactNo varchar(255),
+				address varchar(255),
+				itemsServices varchar(255),
+				price  varchar(255),
+				discounts varchar(255),
+				primary key (supplierID)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE Supplier Query -->
+	<query id="drop_table_supplier">
+         <![CDATA[        
+            DROP TABLE IF EXISTS supplier 
+        ]]>
+	</query>
+
+	<!-- insert Supplier Query -->
+	<query id="insert_supplier">
+        <![CDATA[
+          	insert into supplier (supplierID, Name, contactNo, address, itemsServices, price, discounts) 
+          	values (?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular supplier by id Query -->
+	<query id="supplier_by_id">
+         <![CDATA[        
+            select * from supplier where supplier.supplierID = ?
+        ]]>
+	</query>
+
+	<!-- Select all supplier -->
+	<query id="all_supplier">
+         <![CDATA[        
+            select * from supplier
+        ]]>
+	</query>
+
+	<!-- Delete a particular supplier by id Query -->
+	<query id="remove_supplier">
+         <![CDATA[        
+            delete from supplier where supplier.supplierID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular supplier by id Query -->
+	<query id="update_supplier">
+         <![CDATA[        
+            update supplier as s 
+            set s.Name = ?, s.contactNo = ?, s.address = ?, s.itemsServices = ?, s.price = ?, s.discounts = ?
+            where s.supplierID = ?
+        ]]>
+	</query>
+	
+		<!-- Get supplier IDs Query -->
+	<query id="supplier_ids">
+         <![CDATA[        
+            select s.supplierID from supplier as s
+        ]]>
+	</query>
+	
+	
+
+</Querys>

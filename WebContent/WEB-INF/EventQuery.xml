@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Querys>
+
+	<!-- Create table employee Query -->
+	<query id="create_event_table">
+        <![CDATA[
+            CREATE TABLE event(
+				eventID varchar(255) not null,
+				customerName varchar(255) not null,
+				type varchar(255),
+				quantity varchar(255),
+				hours varchar(255),
+				location varchar(255) DEFAULT 'Indoor',
+				time  varchar(200) DEFAULT 'Day',
+				description varchar(255),
+				
+				primary key (eventID)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE EMPLOYEES Query -->
+	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS event 
+        ]]>
+	</query>
+
+	<!-- Select all customer orders Query -->
+	<query id="insert_event">
+        <![CDATA[
+          	insert into event (eventID, customerName, type, quantity, hours, location, time, description) 
+          	values (?, ?, ?, ?, ?, ?, ? ,?)
+        ]]>
+	</query>
+
+	<!-- Select a particular employee by id Query -->
+	<query id="event_by_id">
+         <![CDATA[        
+            select * from event where event.eventID = ?
+        ]]>
+	</query>
+
+	<!-- Select all employees -->
+	<query id="all_events">
+         <![CDATA[        
+            select * from event
+        ]]>
+	</query>
+
+	<!-- Delete a particular employee by id Query -->
+	<query id="remove_event">
+         <![CDATA[        
+            delete from event where event.eventID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular employee by id Query -->
+	<query id="update_event">
+         <![CDATA[        
+            update event as e 
+            set e.customerName = ?, e.type = ?, e.quantity = ?, e.hours = ?, e.location = ?, e.time = ?, e.description = ? 
+            where e.eventID = ?
+        ]]>
+	</query>
+	
+		
+	<query id="event_ids">
+         <![CDATA[        
+            select e.eventID from event as e
+        ]]>
+	</query>
+
+</Querys>

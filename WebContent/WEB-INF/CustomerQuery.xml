@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Querys>
+
+	<!-- Create table employee Query -->
+	<query id="create_customer_table">
+        <![CDATA[
+            CREATE TABLE customer(
+				customerID varchar(255) not null,
+				firstName varchar(255),
+				lastName varchar(255),
+				nIC varchar(255),
+				mobile varchar(255),
+				address  varchar(255),
+				birthday varchar(255),
+				gender varchar(255) DEFAULT 'Male',
+				primary key (customerID)
+			)
+        ]]>
+	</query>
+
+	<!-- DROP TABLE EMPLOYEES Query -->
+	<query id="drop_table">
+         <![CDATA[        
+            DROP TABLE IF EXISTS customer 
+        ]]>
+	</query>
+
+	<!-- Select all customer orders Query -->
+	<query id="insert_customer">
+        <![CDATA[
+          	insert into customer (customerID, firstName, lastName, nIC, mobile, address, birthday, gender) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular employee by id Query -->
+	<query id="customer_by_id">
+         <![CDATA[        
+            select * from customer where customer.customerID = ?
+        ]]>
+	</query>
+
+	<!-- Select all employees -->
+	<query id="all_customers">
+         <![CDATA[        
+            select * from customer
+        ]]>
+	</query>
+
+	<!-- Delete a particular employee by id Query -->
+	<query id="remove_customer">
+         <![CDATA[        
+            delete from customer where customer.customerID = ?
+        ]]>
+	</query>
+	
+	<!-- Update a particular employee by id Query -->
+	<query id="update_customer">
+         <![CDATA[        
+            update customer as e 
+            set e.firstName = ?, e.lastName = ?, e.nIC = ?, e.mobile = ?, e.address = ?, e.birthday = ?, e.gender = ? 
+            where e.customerID = ?
+        ]]>
+	</query>
+	
+		<!-- Get employee IDs Query -->
+	<query id="customer_ids">
+         <![CDATA[        
+            select e.customerID from customer as e
+        ]]>
+	</query>
+
+</Querys>
